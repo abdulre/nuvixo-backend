@@ -7,9 +7,9 @@
     "start": "node src/server.js"
   },
   "dependencies": {
-    "cors": "^2.8.5",
-    "elliptic": "^6.5.4",
-    "express": "^4.18.2",
-    "mongoose": "^8.0.0"
+  "cors": "^2.8.5",
+  "elliptic": "^6.5.4",
+  "express": "^4.18.2",
+  "mongoose": "^8.0.0"
   }
 }
