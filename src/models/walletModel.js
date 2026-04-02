@@ -1,3 +1,4 @@
+const mongoose = require('mongoose');
 const mongoose = require('../db');
 
 const walletSchema = new mongoose.Schema({

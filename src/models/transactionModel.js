@@ -1,12 +1,15 @@
-const mongoose = require('../db');
+const mongoose = require('mongoose');
 
 const transactionSchema = new mongoose.Schema({
-    from: String,
-    to: String,
-    amount: Number,
-    signature: String,
-    status: { type: String, default: "confirmed" },
-    timestamp: { type: Date, default: Date.now }
+  from: String,
+  to: String,
+  amount: Number,
+  signature: String,
+  status: String,
+  timestamp: {
+    type: Date,
+    default: Date.now
+  }
 });
 
 module.exports = mongoose.model('Transaction', transactionSchema);
