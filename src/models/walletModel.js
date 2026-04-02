@@ -1,10 +1,8 @@
 const mongoose = require('mongoose');
-const mongoose = require('../db');
 
 const walletSchema = new mongoose.Schema({
-    publicKey: String,
-    balance: Number,
-    nonce: { type: Number, default: 0 }
+  publicKey: String,
+  balance: Number
 });
 
 module.exports = mongoose.model('Wallet', walletSchema);
